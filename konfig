@@ -1,0 +1,22 @@
+>ip dhcp (dapatkan ip dari dhcp server / mode dhcp client)
+>dhcp (dapatkan ip dari dhcp server / mode dhcp client)
+>ip 192.168.1.10 255.255.255.0 192.168.1.1 (set IP static)
+>ip dns 8.8.8.8 (set dns)
+>show ip (tampilkan konfig IP addressnya)
+>clear ip (hapus konfig IPnya)
+>set pc-khalik (set hostname)
+>save (save configurasi, wajib yah jika tidak konfignya hilang jika VPCSnya di restart atau shutdown)
+>save config1 (save configurasi dengan mengeset namanya)
+>ping 192.168.1.254 (ping)
+>trace 192.168.1.254 (traceroute)
+>show arp (tampilkan arp)
+
+Eksekusi ping TCP dengan tujuan port 80.
+>ping 192.168.12.1 -P 6 -p 80 (untuk mengecek TCP port 80)
+
+Eksekusi ping UDP dengan tujuan port 53.
+>ping 192.168.12.1 -P 17 -p 53 (untuk mengecek UDP port 53)
+
+angka 6 & 17 (protocol number) dari mana?
+referensinya di sini:
+https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml
